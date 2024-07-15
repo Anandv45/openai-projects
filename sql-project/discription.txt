@@ -1,27 +1,26 @@
 Project Overview
+
 This project demonstrates how to integrate LangChain with a MySQL database to enable natural language querying using OpenAI's GPT-3.5-turbo model. The main goal is to facilitate seamless interaction with a SQL database through natural language, leveraging the capabilities of a powerful language model.
 
 Key Components
+
 Environment Setup:
-
 OpenAI API key is set up to authenticate and interact with the OpenAI GPT-3.5-turbo model.
+
 Database Connection:
-
 Connects to a MySQL database using SQLAlchemy and PyMySQL for managing and executing SQL queries.
+
 Language Model Initialization:
-
 Uses the ChatOpenAI class from LangChain to initialize the GPT-3.5-turbo model for natural language processing.
-SQL Database Chain:
 
+SQL Database Chain:
 Creates an instance of SQLDatabaseChain that links the language model to the database.
 Enables verbose mode to provide detailed logs for understanding the query execution process.
 
 How It Works
 
 Environment Setup: The OpenAI API key is configured to enable authentication for the OpenAI API.
-
 Database Connection: The project connects to a MySQL database using user-provided credentials. This connection is managed through SQLAlchemy and PyMySQL.
-
 Language Model Initialization: The GPT-3.5-turbo model is initialized using LangChain, allowing the processing of natural language queries.
 SQL Database Chain: The SQLDatabaseChain instance acts as a bridge between the natural language input and the SQL database. It translates natural language queries into SQL, executes them on the database, and returns the results.
 Query Execution: Users can input queries in natural language, which are then processed by the language model, converted into SQL queries, executed on the connected database, and the results are returned.
